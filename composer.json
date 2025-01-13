@@ -1,0 +1,52 @@
+{
+    "name": "ajz/api-response",
+    "description": "Elegant and consistent API response helpers for Laravel applications with proper HTTP status codes and standardized JSON responses.",
+    "type": "library",
+    "license": "MIT",
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "orchestra/testbench": "^9.0",
+        "mockery/mockery": "^1.6",
+        "phpstan/phpstan": "^1.10",
+        "laravel/pint": "^1.13",
+        "friendsofphp/php-cs-fixer": "^3.40"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ajz\\ApiResponse\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Murtadah Haddad",
+            "email": "76531444+Murtadah-1984@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": [],
+    "autoload-dev": {
+        "psr-4": {
+            "Workbench\\App\\": "workbench/app/",
+            "Workbench\\Database\\Factories\\": "workbench/database/factories/",
+            "Workbench\\Database\\Seeders\\": "workbench/database/seeders/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@clear",
+            "@prepare"
+        ],
+        "clear": "@php vendor/bin/testbench package:purge-skeleton --ansi",
+        "prepare": "@php vendor/bin/testbench package:discover --ansi",
+        "build": "@php vendor/bin/testbench workbench:build --ansi",
+        "serve": [
+            "Composer\\Config::disableProcessTimeout",
+            "@build",
+            "@php vendor/bin/testbench serve --ansi"
+        ],
+        "lint": [
+            "@php vendor/bin/pint --ansi",
+            "@php vendor/bin/phpstan analyse --verbose --ansi"
+        ]
+    }
+}
