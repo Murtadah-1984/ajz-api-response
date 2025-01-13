@@ -219,6 +219,3 @@ If the project maintainer has any additional requirements, you will find them li
 - **One pull request per feature** - If you want to do more than one thing, send multiple pull requests.
 
 ## Happy coding!
-```
-
-This README provides comprehensive documentation of your package's features, installation instructions, usage examples, and contribution guidelines. You can customize it further based on your specific needs or additional features.
