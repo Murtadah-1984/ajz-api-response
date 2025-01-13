@@ -163,8 +163,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [Your Name](https://github.com/yourusername)
-- [All Contributors](../../contributors)
+- [Murtadah Haddad](https://github.com/Murtadah-1984)
 
 ## License
 
