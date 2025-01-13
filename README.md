@@ -17,7 +17,7 @@ A elegant and consistent API response helper package for Laravel applications. S
 You can install the package via composer:
 
 ```bash
-composer require your-vendor/laravel-api-helpers
+composer require ajz/api-response
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ composer require your-vendor/laravel-api-helpers
 Add the `ApiResponseHelpers` trait to your controller:
 
 ```php
-use YourVendor\ApiHelpers\Traits\ApiResponseHelpers;
+use Ajz\ApiResponse\Traits\ApiResponseHelpers;
 
 class ApiController extends Controller
 {
